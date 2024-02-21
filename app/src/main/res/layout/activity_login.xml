@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/union"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/curtain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curtain"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/curtain"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ClickMeet!!!"
+            android:textSize="25sp"
+            android:textColor="#005248"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Where Every Click Leads to"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Memorable Moments!"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:layout_marginTop="7dp"
+        android:elevation="10dp"
+        android:background="@drawable/square_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="14dp"
+            android:paddingTop="25dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="Login"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="21dp"
+            android:paddingTop="15dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="Email"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:hint="Ex : example@gmail.com"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="#716E6E"
+                android:background="@drawable/edit_text"
+                android:textSize="14sp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="21dp"
+            android:paddingTop="15dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="Password"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            app:endIconMode="custom"
+            app:hintEnabled="false"
+            app:endIconDrawable="@drawable/cross_eyes">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:layout_centerHorizontal="true"
+                android:hint="Enter 8 character"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="#716E6E"
+                android:background="@drawable/edit_text"
+                android:textSize="14sp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Or login with social platform"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="12sp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="9dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login with google"
+            android:textAllCaps="false"
+            android:background="@drawable/google_button"
+            android:fontFamily="@font/montserrat_medium"
+            android:drawableStart="@drawable/google_logo"
+            android:paddingStart="100dp"
+            android:paddingEnd="100dp"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="12sp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/black"
+                android:text="Don't have an account?"
+                android:layout_marginEnd="5dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_toRegis"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Register"
+                android:textColor="#005248"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="12sp"
+            android:text="" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
